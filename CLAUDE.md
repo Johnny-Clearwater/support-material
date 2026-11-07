@@ -46,7 +46,7 @@ Every issue follows `content/issues/000-pilot.md` as the reference format.
 - One **Deep cut**: a long write-up of a single project.
 - **Quick finds**: 4–5 short picks.
 - **Tooling corner**: 3 tooling picks.
-- **From the bench**: leave a placeholder for Ethan to fill in. Never write bench results yourself.
+- **From the bench**: leave a placeholder for Johnny to fill in. Never write bench results yourself.
 - Then the sign-off, house rules and sources.
 
 **Credit and licensing**

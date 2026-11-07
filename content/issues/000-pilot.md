@@ -56,7 +56,7 @@ Three small-developer tools, all updated in the last four months. Two are especi
 
 ## From the bench
 
-*Occasional section. Ethan prints something featured here on a Prusa MK3S and reports honestly on how it went.*
+*Occasional section. Johnny prints something featured here on a Prusa MK3S and reports honestly on how it went.*
 
 No bench test this issue. Here's the one on the shortlist:
 
@@ -64,7 +64,7 @@ No bench test this issue. Here's the one on the shortlist:
 
 It's not a Support Material pick, since All3DP covered the beta in 2025. It is the most on-brand bench test imaginable, though: an old MK3S teaching itself new tricks.
 
-> *\[Ethan's bench notes go here: print settings, what fought back, and whether it was worth the filament.\]*
+> *\[Johnny's bench notes go here: print settings, what fought back, and whether it was worth the filament.\]*
 
 ## Sign-off
 

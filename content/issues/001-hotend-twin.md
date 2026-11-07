@@ -54,9 +54,9 @@ Five small projects from individual makers.
 
 ## From the bench
 
-*Occasional section. Ethan prints something featured here on a Prusa MK3S and reports honestly on how it went.*
+*Occasional section. Johnny prints something featured here on a Prusa MK3S and reports honestly on how it went.*
 
-> *\[Ethan's bench notes go here: print settings, what fought back, and whether it was worth the filament.\]*
+> *\[Johnny's bench notes go here: print settings, what fought back, and whether it was worth the filament.\]*
 
 ## Sign-off
 
