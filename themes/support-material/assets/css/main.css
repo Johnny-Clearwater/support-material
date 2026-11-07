@@ -94,3 +94,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--text); }
 .site-footer a { color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.prose table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.95rem; display: block; overflow-x: auto; }
+.prose th, .prose td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.prose th { color: var(--muted); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }

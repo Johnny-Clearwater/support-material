@@ -2,7 +2,7 @@
 <article class="issue">
   <header class="issue-head">
     <p class="issue-meta">
-      {{ with .Params.issue }}<span class="issue-no">Issue #{{ printf "%03d" (int .) }}</span>{{ end }}
+      {{ if isset .Params "issue" }}<span class="issue-no">Issue #{{ printf "%03d" (int .Params.issue) }}</span>{{ end }}
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
     </p>
     <h1>{{ .Title }}</h1>

@@ -40,4 +40,29 @@ Start a new issue with `hugo new content issues/NNN-slug.md` (the draft is set t
 
 ## Editorial rules
 
-<!-- TODO: the editorial rules were not included in the setup request. Paste them here. -->
+Every issue follows `content/issues/000-pilot.md` as the reference format.
+
+**Structure**
+- One **Deep cut**: a long write-up of a single project.
+- **Quick finds**: 4–5 short picks.
+- **Tooling corner**: 3 tooling picks.
+- **From the bench**: leave a placeholder for Ethan to fill in. Never write bench results yourself.
+- Then the sign-off, house rules and sources.
+
+**Credit and licensing**
+- Credit every maker by name and link to their own page (repo, project page or profile).
+- Note each project's license. If none is stated, say so and tell readers to check before remixing.
+
+**Images**
+- Never re-host makers' photos. Link to them instead.
+
+**Safety**
+- Never include weapon-related projects, from any source.
+- Never reproduce hazardous chemistry (etchants, reactive inks and the like). Point to the maker's own logs and add a safety note.
+
+**Eligibility**
+- Skip any project that appears on the coverage-check list in `sites.txt` (section 3): 2+ hits means skip, and 1 small or regional hit is the editor's call. Never scan the sites in section 4.
+- Stay within a two-week window: projects must have been created, released or updated in the 14 days before the issue date. (Issue #0 relaxed this once, for the pilot only.)
+
+**sites.txt upkeep**
+- Each issue, scan the ACTIVE list and try 2–3 sites from TO TRY. Then update the file: last-scanned dates, yield ratings, promotions and demotions, and a LOG entry listing picks and rejections with the reason for each.

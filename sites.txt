@@ -1,0 +1,91 @@
+SUPPORT MATERIAL - SITES SCANNED
+"Projects you won't see on Tom's Hardware."
+Last updated: 2026-11-07 (Issue #0)
+
+How to use this file:
+- Add it to the "Claude paying for itself" Project files so every run can see it.
+- Each issue, I scan the ACTIVE list, try 2-3 sites from the TO TRY list, and
+  return an updated copy of this file. Sites that keep producing finds get promoted;
+  dead ones get demoted with a note.
+
+==================================================================
+1. ACTIVE - scanned for Issue #0
+==================================================================
+Site                                  | Last scanned | Yield | Notes
+--------------------------------------|--------------|-------|-------------------------------
+hackaday.io (projects, not the blog)  | 2026-11-07   | HIGH  | Deep cut came from here. Low-view projects with long logs = gold.
+github.com/topics/prusa               | 2026-11-07   | HIGH  | Sort by "recently updated"; 30-100 star repos are the sweet spot.
+GitHub repo search (ESP32 + printer)  | 2026-11-07   | HIGH  | Dryer/enclosure controllers everywhere. Search by hardware, not by "3D printer".
+printables.com                        | 2026-11-07   | MED   | Lots of near-duplicates (e.g. 100 Samla dry boxes). Hunt for the odd one out.
+makerworld.com                        | 2026-11-07   | LOW   | Mostly remixes. Use for coverage checks more than discovery.
+openbuilds.com (build logs)           | 2026-11-07   | LOW   | Older builds dominate; check "recent" only.
+General web search                    | 2026-11-07   | LOW   | Search engines surface the big outlets, not the long tail. Go direct.
+
+==================================================================
+2. TO TRY - adventurous / niche (rotate 2-3 per issue)
+==================================================================
+Code forges beyond GitHub
+- codeberg.org (search: 3d printer, klipper, reprap)
+- gitlab.com (topics: 3d-printing, reprap)
+- repos.ecosyste.ms GitHub topic "3d-printing" (sortable by recent push)
+
+Firmware / tooling communities
+- klipper.discourse.group (Projects & Mods category)
+- plugins.octoprint.org (newest plugins)
+- github.com/topics/klipper, /voron, /toolchanger, /non-planar, /reprap
+- VoronUsers mods repo (community printer mods)
+- forum.duet3d.com (user projects; unusual kinematics live here)
+- forum.prusa3d.com (user mods for MK3S - From the Bench candidates)
+
+Open hardware directories & journals
+- certification.oshwa.org (newly certified open hardware)
+- HardwareX journal (open-access open-hardware papers)
+- Journal of Open Hardware
+- appropedia.org (RepRap / distributed manufacturing pages)
+- kitspace.org (open PCB projects, incl. printer boards)
+
+Maker communities
+- hackster.io PROJECTS (not their news section)
+- instructables.com (3D Printing contest entries)
+- makerfaire.com exhibitor pages (open-source category)
+- reprap.org forum
+- RatRig, Annex Engineering, and DoomCube community galleries
+
+Fediverse & small social
+- lemmy.world/c/3dprinting and other Lemmy 3D printing communities
+- Mastodon hashtags: #3DPrinting #RepRap #Klipper (e.g. fosstodon.org)
+- Hacker News "Show HN" posts mentioning 3D printing
+- r/functionalprint, r/klippers, r/VORONDesign, r/3Dprinting (newest, low-upvote posts)
+
+Personal blogs
+- Search "my printer build log" / "I built a printer" on Substack, Medium, and personal sites
+
+==================================================================
+3. COVERAGE CHECK - if a project appears here, it's out
+==================================================================
+- tomshardware.com/3d-printing
+- all3dp.com
+- 3dprintingindustry.com
+- 3dprint.com
+- fabbaloo.com
+- 3printr.com / 3DPresso
+- voxelmatters.com
+- hackaday.com front page (hackaday.io projects are fine; blog features are "covered")
+- hackster.io news
+- cnx-software.com
+Rule of thumb: 2+ hits on these = skip. 1 small/regional hit = editor's call.
+
+==================================================================
+4. NEVER SCAN
+==================================================================
+- Any community or site centered on 3D printed weapons. Weapon-related projects never
+  appear in Support Material, regardless of source.
+
+==================================================================
+5. LOG
+==================================================================
+2026-11-07  Issue #0. Picks: Hybrid MicroElectronics-Factory (hackaday.io), IkeDryBox,
+            3d-Enclosure-Controller, esp32-spacepi-dryer-controller, diff3d, Panda2Prusa,
+            MINI404, Gantrybar. Rejected as already covered: Prusawire (All3DP 2025,
+            kept as a bench candidate), core-R-Theta printer (Hackster), Chamber Master (3printr),
+            OpenCAL (Hackaday).
