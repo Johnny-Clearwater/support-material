@@ -1,6 +1,6 @@
 SUPPORT MATERIAL - SITES SCANNED
 "Projects you won't see on Tom's Hardware."
-Last updated: 2026-11-07 (Issue #0)
+Last updated: 2026-11-21 (Issue #1)
 
 How to use this file:
 - Add it to the "Claude paying for itself" Project files so every run can see it.
@@ -9,23 +9,25 @@ How to use this file:
   dead ones get demoted with a note.
 
 ==================================================================
-1. ACTIVE - scanned for Issue #0
+1. ACTIVE - scanned for Issue #1 (dates below show last scan)
 ==================================================================
 Site                                  | Last scanned | Yield | Notes
 --------------------------------------|--------------|-------|-------------------------------
-hackaday.io (projects, not the blog)  | 2026-11-07   | HIGH  | Deep cut came from here. Low-view projects with long logs = gold.
-github.com/topics/prusa               | 2026-11-07   | HIGH  | Sort by "recently updated"; 30-100 star repos are the sweet spot.
-GitHub repo search (ESP32 + printer)  | 2026-11-07   | HIGH  | Dryer/enclosure controllers everywhere. Search by hardware, not by "3D printer".
+hackaday.io (projects, not the blog)  | 2026-11-07   | HIGH  | Unreachable from the routine sandbox in #1 (not scanned) - allow the host. Deep cut came from here in #0. Low-view projects with long logs = gold.
+github.com/topics/prusa               | 2026-11-07   | HIGH  | Sort by "recently updated"; 30-100 star repos are the sweet spot. Not re-scanned in #1 (discover_github.py covered topics instead).
+GitHub repo search (ESP32 + printer)  | 2026-11-07   | HIGH  | Dryer/enclosure controllers everywhere. Search by hardware, not by "3D printer". Not re-scanned in #1.
 printables.com                        | 2026-11-07   | MED   | Lots of near-duplicates (e.g. 100 Samla dry boxes). Hunt for the odd one out.
 makerworld.com                        | 2026-11-07   | LOW   | Mostly remixes. Use for coverage checks more than discovery.
 openbuilds.com (build logs)           | 2026-11-07   | LOW   | Older builds dominate; check "recent" only.
 General web search                    | 2026-11-07   | LOW   | Search engines surface the big outlets, not the long tail. Go direct.
 
+GitHub topics via discover_github.py  | 2026-11-21   | HIGH  | NEW row. 1,105 repos in 14 days; the filter that works: 10-60 stars, own-hardware or firmware focus. Issue #1 yielded 9 picks. Heavy noise: Bambu/Home Assistant wrappers, CAD-for-LLM agents, STL dumps.
+
 ==================================================================
 2. TO TRY - adventurous / niche (rotate 2-3 per issue)
 ==================================================================
 Code forges beyond GitHub
-- codeberg.org (search: 3d printer, klipper, reprap)
+- codeberg.org [2026-11-21: host unreachable from the routine's sandbox; needs allowing in network settings] (search: 3d printer, klipper, reprap)
 - gitlab.com (topics: 3d-printing, reprap)
 - repos.ecosyste.ms GitHub topic "3d-printing" (sortable by recent push)
 
@@ -38,7 +40,7 @@ Firmware / tooling communities
 - forum.prusa3d.com (user mods for MK3S - From the Bench candidates)
 
 Open hardware directories & journals
-- certification.oshwa.org (newly certified open hardware)
+- certification.oshwa.org [2026-11-21: host unreachable from sandbox] (newly certified open hardware)
 - HardwareX journal (open-access open-hardware papers)
 - Journal of Open Hardware
 - appropedia.org (RepRap / distributed manufacturing pages)
@@ -89,3 +91,14 @@ Rule of thumb: 2+ hits on these = skip. 1 small/regional hit = editor's call.
             MINI404, Gantrybar. Rejected as already covered: Prusawire (All3DP 2025,
             kept as a bench candidate), core-R-Theta printer (Hackster), Chamber Master (3printr),
             OpenCAL (Hackaday).
+2026-11-21  Issue #1. Scanned: GitHub topics (discover_github.py). Tried from TO TRY: codeberg.org,
+            certification.oshwa.org (both unreachable from sandbox, no result; hackaday.io from ACTIVE also
+            unreachable). Picks: ender3-hotend-twin (deep cut), kiln-os, qidi-q2-klipper, SparkShift,
+            SpinSlicer, White-Feather-Fountain-Pen, ScanNTune, LayerPeek, MeshMill.
+            Rejected: caddiff (overlaps diff3d from #0, and aimed at generic CAD not printing);
+            Centauri Carbon 2 community (128 stars, Elegoo community firmware, big and well known);
+            Bambu Handy clones/dashboards (print-handy, pandy, bambuddy: saturated, remix-like);
+            AI/CAD agents and MCP servers (off-topic for prints); cycling STL dumps (print-and-pedal-garage,
+            velo-print-rigs: SEO-style listings, no license, not maker work); fork/WIP repos with <10 stars
+            and no description. Coverage: web searches found no hits on section 3 sites for any pick.
+            Note: SpinSlicer, kiln-os and LayerPeek returned zero web hits, so coverage is unproven but unlikely.
