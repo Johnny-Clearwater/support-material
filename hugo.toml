@@ -1,0 +1,53 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Support Material"
+theme = "support-material"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  slogan = "Small projects, big overhangs."
+  description = "A biweekly newsletter of under-the-radar open-source 3D printing projects."
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[services.rss]
+  limit = 50
+
+[menus]
+  [[menus.main]]
+    name = "Issues"
+    pageRef = "/issues"
+    weight = 10
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 20
+  [[menus.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 30
+
+# No trackers, no third-party embeds.
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = true
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[markup.highlight]
+  noClasses = false

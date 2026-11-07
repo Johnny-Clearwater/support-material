@@ -1,0 +1,4 @@
+name = "support-material"
+license = "MIT"
+description = "Minimal, tracker-free theme for the Support Material newsletter."
+min_version = "0.128.0"

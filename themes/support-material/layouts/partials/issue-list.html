@@ -1,0 +1,20 @@
+{{ $issues := where site.RegularPages "Section" "issues" }}
+{{ $issues = sort $issues "Date" "desc" }}
+{{ with $issues }}
+<ol class="issue-list" reversed>
+  {{ range . }}
+  <li>
+    <a class="issue-card" href="{{ .RelPermalink }}">
+      <span class="issue-meta">
+        {{ with .Params.issue }}<span class="issue-no">#{{ printf "%03d" (int .) }}</span>{{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </span>
+      <span class="issue-title">{{ .Title }}</span>
+      {{ with .Params.summary }}<span class="issue-summary">{{ . }}</span>{{ end }}
+    </a>
+  </li>
+  {{ end }}
+</ol>
+{{ else }}
+<p class="empty">The first issue is still on the print bed. Check back soon.</p>
+{{ end }}
