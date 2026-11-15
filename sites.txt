@@ -1,6 +1,6 @@
 SUPPORT MATERIAL - SITES SCANNED
 "Projects you won't see on Tom's Hardware."
-Last updated: 2026-11-07 (Issue #0)
+Last updated: 2026-11-15 (Issue #1 draft)
 
 How to use this file:
 - Add it to the "Claude paying for itself" Project files so every run can see it.
@@ -9,29 +9,33 @@ How to use this file:
   dead ones get demoted with a note.
 
 ==================================================================
-1. ACTIVE - scanned for Issue #0
+1. ACTIVE - scanned for Issue #1
 ==================================================================
 Site                                  | Last scanned | Yield | Notes
 --------------------------------------|--------------|-------|-------------------------------
-hackaday.io (projects, not the blog)  | 2026-11-07   | HIGH  | Deep cut came from here. Low-view projects with long logs = gold.
-github.com/topics/prusa               | 2026-11-07   | HIGH  | Sort by "recently updated"; 30-100 star repos are the sweet spot.
-GitHub repo search (ESP32 + printer)  | 2026-11-07   | HIGH  | Dryer/enclosure controllers everywhere. Search by hardware, not by "3D printer".
-printables.com                        | 2026-11-07   | MED   | Lots of near-duplicates (e.g. 100 Samla dry boxes). Hunt for the odd one out.
-makerworld.com                        | 2026-11-07   | LOW   | Mostly remixes. Use for coverage checks more than discovery.
-openbuilds.com (build logs)           | 2026-11-07   | LOW   | Older builds dominate; check "recent" only.
-General web search                    | 2026-11-07   | LOW   | Search engines surface the big outlets, not the long tail. Go direct.
+hackaday.io (projects, not the blog)  | 2026-11-15*  | HIGH  | *BLOCKED in the cloud session (DNS). Site-restricted web search only: nothing in window. Yield kept from #0.
+github.com/topics/prusa               | 2026-11-15   | HIGH  | Via GitHub search API (topic:prusa). Gave coreone-firmware (4 stars). Also surfaced LayerPeek.
+GitHub repo search (ESP32 + printer)  | 2026-11-15   | LOW   | Noisy this time: "my stars" lists and non-printing repos. Search by hardware + "filament"/"dryer" works better.
+GitHub topic search (discover script) | 2026-11-15   | HIGH  | NEW ROW. scripts/discover_github.py, 1,128 candidates. Produced every pick in #1. Lots of AI-CAD and spam; filter by stars >= 8.
+printables.com                        | 2026-11-15*  | MED   | *BLOCKED (DNS). Web search showed no dates; nothing verifiable. Yield kept from #0.
+makerworld.com                        | 2026-11-15*  | LOW   | *BLOCKED (DNS). Web search: Bambu mods Apr-Sep only; one crowdfunding listing (commercial, skipped).
+openbuilds.com (build logs)           | 2026-11-15*  | LOW   | *BLOCKED (DNS). Web search: newest builds July 2026.
+General web search                    | 2026-11-15   | LOW   | Again only news/industry items. Most useful for coverage checks.
+
+* = could not be fetched directly from the cloud session. Allow hackaday.io, printables.com,
+    makerworld.com, openbuilds.com (and the TO TRY sites) in the environment's network settings.
 
 ==================================================================
 2. TO TRY - adventurous / niche (rotate 2-3 per issue)
 ==================================================================
 Code forges beyond GitHub
-- codeberg.org (search: 3d printer, klipper, reprap)
+- codeberg.org (search: 3d printer, klipper, reprap)  [tried #1: BLOCKED; search only, LOW, no dates visible]
 - gitlab.com (topics: 3d-printing, reprap)
 - repos.ecosyste.ms GitHub topic "3d-printing" (sortable by recent push)
 
 Firmware / tooling communities
-- klipper.discourse.group (Projects & Mods category)
-- plugins.octoprint.org (newest plugins)
+- klipper.discourse.group (Projects & Mods category)  [tried #1: BLOCKED; search only, LOW-MED. Petrel lead, date unverified]
+- plugins.octoprint.org (newest plugins)  [tried #1: BLOCKED; search only, MED. By-date listing gives checkable dates; promote once reachable]
 - github.com/topics/klipper, /voron, /toolchanger, /non-planar, /reprap
 - VoronUsers mods repo (community printer mods)
 - forum.duet3d.com (user projects; unusual kinematics live here)
@@ -89,3 +93,22 @@ Rule of thumb: 2+ hits on these = skip. 1 small/regional hit = editor's call.
             MINI404, Gantrybar. Rejected as already covered: Prusawire (All3DP 2025,
             kept as a bench candidate), core-R-Theta printer (Hackster), Chamber Master (3printr),
             OpenCAL (Hackaday).
+
+2026-11-15  Issue #1 (draft, issue date 2026-11-21; window 2026-11-07 to 2026-11-21).
+            Picks: Cadence Slicer (deep cut; v1.2.0 Nov 10), AccessSlice, ender3-hotend-twin,
+            MOSS, SpinSlicer, gridfinity-solidcraft, coreone-firmware, Kiln OS, Sutura.
+            Coverage check: 0 hits on section-3 sites for all picks (site-restricted web search;
+            all3dp/3dprint/3printr/hackster pages could not be opened directly).
+            Rejected:
+            - Skyward150 (TenTelescopes): covered, 3dprint.com 2024-02-17 + 3printr.com = 2 hits.
+            - Mault (maultxyz): org with no named maker, product-like; also strong. Editor's call.
+            - open-mouthpiece (OpenSaxMouthpiece): org with no named person, AI-generated. Editor's call.
+            - cycloidgen (medinstech): company project; only a housekeeping commit in window.
+            - White-Feather-Fountain-Pen (Xarfa): only an automated star-chart commit in window.
+            - openprinttag-spoolman (mathiasbk): last activity Nov 3, outside window.
+            - LayerPeek (pfoltynek): last release Nov 5; only develop-branch commits in window. Re-check for #2.
+            - SparkShift, ScanNTune: last push Nov 2, outside window.
+            - caddiff: too close to diff3d from #0.
+            - Petrel (klipper discourse): v7 date unverifiable, no GitHub releases.
+            - Upload Manager Tab (OctoPrint plugin, Nov 7): too thin for a slot (UI move, 0 installs).
+            - Several spam / piracy-looking repos in the candidate list skipped without research.
